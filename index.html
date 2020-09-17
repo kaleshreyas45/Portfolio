@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyas Kale-Web Developer</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a73d299641.js" crossorigin="anonymous"></script>
+    <style>
+        .banner::before {
+    content: "";
+    background: url('laptop1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+
+.cont {
+    position: relative;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: #0c0c0cc7;
+}
+
+.cards {
+    position: relative;
+    top: 100px;
+
+}
+
+.cards img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.c1 {
+    color: white;
+}
+
+.c1 h1 {
+    margin-top: 97px;
+    font-size: 41px;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: black 4px 5px;
+
+}
+
+.c1 p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* .shade {
+    background: url('black.jpg') no-repeat center center/cover;
+} */
+
+.c2 h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    color: black;
+    margin-top: 20px;
+}
+
+.c2 p {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+
+
+.progress {
+    height: 10px;
+
+}
+
+.progress-bar {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0069d9;
+}
+
+
+
+.c3 h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+   color:black;
+}
+.c3 h4{
+    color: white;
+}
+
+.business {
+    width: 150px;
+    height: 200px;
+}
+
+svg {
+    font-size: 40px;
+    color: white;
+    margin-left:30px;
+    
+}
+
+svg:hover {
+    color: white;
+}
+
+.div {
+    display: flex;
+    margin-top: 30px;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.diff {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-shadow: white 4px 2px;
+}
+
+
+
+
+.x {
+    position: relative;
+    top: 20px;
+    margin-left: 10px;
+    color: white;
+    height: 46px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 0px;
+}
+
+.btn-overlay {
+    position: absolute;
+    width: 0px;
+    top: -1px;
+    left: 0px;
+    background-color: #04040470;
+    height: 47px;
+    z-index: 1;
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+
+.x:hover .btn-overlay {
+    width: 150px;
+}
+
+
+.x p{
+    position: relative;
+    z-index: 2;
+    top: 4px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.x:hover  p{
+       color:white;
+}
+/* .pr-section{
+    background:url('greyish.jpg') no-repeat center center/cover;
+    margin-top: -48px;
+} */
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project .box {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    margin: 20px;
+    border:2px solid #0069d9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.box img {
+    width: 297px;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.img-overlay {
+    position: absolute;
+    width: 297px;
+    top: -1px;
+    left: 0px;
+    background-color: #04040470;
+    height: 0px;
+    z-index: 1;
+    transition-property: all;
+    transition-duration: 0.2s;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.box:hover .img-overlay {
+    height: 250px;
+}
+
+
+.para-overlay {
+    position: absolute;
+    width: 297px;
+    top: 250px;
+    left: 0px;
+    background-color: black;
+    height: 0px;
+    z-index: 1;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.box:hover .para-overlay {
+    height: 200px;
+}
+
+.box:hover p{
+    color: white;
+}
+
+.box p{
+    position: relative;
+    z-index: 2;
+} 
+
+.box:hover h5{
+    color: white;
+}
+
+.box h5{
+    position: relative;
+    z-index: 2;
+} 
+.footer{
+    width:100%;
+    background-color: black;
+}
+.footer h4{
+    color:white;
+    padding:20px;
+}
+.footer .underline{
+    height:3px;
+    width:100px;
+    background-color: orangered;
+    position: absolute;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+}
+.footer .address{
+    display: flex;
+}
+.footer .address p{
+   color: white;
+   margin-left:10px;
+   margin-top:-10px;
+}
+i{
+    color:white;
+}
+.footer.info{
+    display: flex;
+    flex-direction: column;
+}
+.footer .contact{
+    display: flex;
+}
+.footer .mail{
+    display: flex;
+}
+.footer .contact p{
+    color: white;
+    margin-left:10px;
+    margin-top:-10px;
+ }
+.footer .mail p{
+    color: white;
+   padding-left: 0px;
+    margin-top:-10px;
+    margin-left:-5px;
+ }
+ @media(max-width:974px) {
+    .project .box {
+        width: 250px;
+        height: 420px;
+    }
+
+    .box img {
+        width: 250px;
+        height: 220px;
+    }
+    .img-overlay{
+        width: 250px;
+    }
+    .box:hover .img-overlay {
+    height: 220px;
+}
+.para-overlay{
+    width:250px;
+    top:220px;     
+}
+}
+
+@media(max-width:844px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project .box {
+        width: 400px;
+        height: 400px;
+    }
+
+    .box img {
+        width: 400px;
+        height: 250px;
+    }
+    .img-overlay{
+        width:400px;
+    }
+    .box:hover .img-overlay {
+    height: 250px;
+}
+.para-overlay{
+    top:250px;
+    width:400px;
+}
+.box:hover .para-overlay{
+    height:150px;
+}
+
+}
+
+@media(max-width:420px) {
+    .project .box {
+        width: 320px;
+        height: 400px;
+    }
+
+    .box img {
+        width: 320px;
+        height: 250px;
+    }
+  
+    .img-overlay{
+        width:320px;
+    }
+    .box:hover .img-overlay {
+    height: 250px;
+}
+.para-overlay{
+    top:250px;
+    width:320px;
+}
+.box:hover .para-overlay{
+    height:150px;
+}
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid banner">
+
+    </div>
+    <div class="cont">
+        <div class="container c1">
+            <center>
+                <div class="cards" style="width: 18rem;">
+                    <img src="me.jpg" class="card-img-top" alt=" ">
+                </div>
+                <h1>Shreyas Nandkumar Kale</h1>
+                <p>Frontend Developer & Freelancer</p>
+                
+                <a href="https://api.whatsapp.com/send?phone=919665746087" type="button" class="btn x" style="background-color:#0069d9;" target="_blank">
+                    <p class="btn-content"> <i class="fab fa-whatsapp"></i> Chat with Me</p>
+                    <div class="btn-overlay">
+
+                    </div>
+                </a>
+
+                <!-- <a type="button" class="btn x" role="button" style="background-color: #00c761;" >
+                    <p class="btn-content" style="color:white;">Contact Me</p>
+                    <div class="btn-overlay">
+
+                    </div>
+                </a> -->
+                <!-- <div class="chat">
+                    <a href="https://kaleshreyas45.github.io/Gym/" class="btn btn-primary b x"
+                    style=""><p class="btn-content">Chat</p></a>
+                    <div class="btn-overlay">
+
+                    </div>
+                </div> -->
+               
+
+            </center>
+
+        </div>
+
+    </div>
+    <div class="container-fluid shade">
+        <div class="container c2" id="about">
+            <h1 class="text-center"> About Me</h1>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <center>
+                        <p>As you can see my full name is Shreyas Nandkumar Kale. Basically my full interest is towards
+                            the
+                            WEB DEVELOPMENT and have made some of responsive Landing Pages.Now I am learning a server
+                            side
+                            language that is PHP and have cleared some of its basic parts.Recently I have done a Real
+                            Word
+                            Project that is e-commerce website using PHP and MySQL. Also I have created a notes taking
+                            website in PHP/MYSQL I have also completed 4 star in Python Programming Language in
+                            HackerRank.
+                        </p>
+                    </center>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p style="">HTML 85%</p>
+                    <div class="progress ">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+
+                    </div>
+                    <p style="">CSS 80%</p>
+                    <div class="progress ">
+                        <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+
+                    </div>
+                    <p style="">Bootstrap 78%</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 81%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+
+                    </div>
+                    <p style="">MYSQL 81%</p>
+
+                    <div class="progress ">
+                        <div class="progress-bar" role="progressbar" style="width: 74%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+
+                    </div>
+                    <p style="">PHP 74%</p>
+                    <div class="progress ">
+                        <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+
+                    </div>
+                    <p style="">WordPress 87%</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid blueshade">
+        <div class="container c3">
+            <h1 class="text-center">What I can Do ?</h1>
+            <div class="row my-5">
+                <div class="col-md-6" style="background:url('mylaptop.jpg') no-repeat center center/cover; height:400px;">
+                    <center>
+                        <!-- <img src="businessman.png" class="business" alt="" srcset=""> -->
+                    </center>
+
+                </div>
+                <div class="col-md-6 " style="background-color: #0069d9; height:400px; ">
+                    <div class="div">
+                        <svg class="bi bi-check-circle-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                        <h4 class="content">Coding In PHP </h4>
+                    </div>
+                    <div class="div my-2">
+                        <svg class="bi bi-check-circle-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                        <h4 class="content"> Landing Page Design</h4>
+                    </div>
+                    <div class="div my-2">
+                        <svg class="bi bi-check-circle-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                        <h4 class="content"> Database Handling</h4>
+                    </div>
+                    <div class="div my-2">
+                        <svg class="bi bi-check-circle-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                        <h4 class="content">Responsive Websites</h4>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+    <!-- <div class="container c4">
+
+        <div class="row">
+            <center>
+                <div class="col-md-6 first">
+                    <h5 class="text-center">Notes taking website</h5>
+                    <p class="text-center">This is simple notes taking website that I have created using PHP and MYSQL.
+                        It has login,register system and create,update,delete etc features related to notes</p>
+                    <center>
+                        <a href="https://createnotes.000webhostapp.com/CreateNotes.php" class="btn btn-primary">View
+                            Project</a>
+                    </center>
+                </div>
+            </center>
+
+        </div>
+
+
+
+
+
+        <div class="row">
+            <center>
+                <div class="col-md-6 third">
+                    <h5 class="text-center">Responsive Landing Page</h5>
+                    <p class="text-center">This is an amazing landing page that I have created using bootstrap and css.
+                        I have used dummy content for that site. The layout of website will change according to your
+                        device. Try to see it through different devices. Please have a look on clicking View Project
+                        button.</p>
+                    <center>
+                        <a href="https://kaleshreyas45.github.io/Landing_Page/" class="btn btn-primary">View Project</a>
+                    </center>
+            </center>
+
+        </div>
+        <div class="row">
+            <center>
+                <div class="col-md-6 fourth">
+                    <h5 class="text-center">Another Responsive Frontend </h5>
+                    <p class="text-center"> This is my first simple but responsive one page website that I have created
+                        using pure HTML and CSS only. I have used media query to make it responsive. Adding media query
+                        was a bit difficult task for website.But somehow I managed it. Please visit site by clicking
+                        View Project button. </p>
+                    <center>
+                        <a href="https://kaleshreyas45.github.io/Cooking/" class="btn btn-primary">View Project</a>
+                    </center>
+                </div>
+            </center>
+
+        </div>
+    </div> -->
+    <div class="container-fluid pr-section">
+        <h1 class='text-center diff'>My Projects</h1>
+        <div class="project">
+           
+            <div class="box">
+                <img src="Notes.jpg">
+                <div class="img-overlay">
+                    <a href="https://createnotes.000webhostapp.com/CreateNotes.php" class="btn btn-primary"
+                        style="border-top-left-radius: 20px;" target="_blank">View</a>
+                </div>
+                <h5 class="text-center">Notes Taking Website</h5>
+                <p class="text-center">This is simple notes taking website that I have created using PHP and MYSQL.
+                    It has login,register system and create,update,delete etc features related to notes</p>
+                <div class="para-overlay">
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="gym.jpg">
+                <div class="img-overlay">
+                    <a href="https://kaleshreyas45.github.io/Gym/" class="btn btn-primary"
+                        style="border-top-left-radius: 20px;" target="_blank">View</a>
+                </div>
+                <h5 class="text-center">Gym Website </h5>
+                <p class="text-center">This is an amazing Gym website landing page that I have created using bootstrap
+                    and css.
+                    It is reponsive also. </p>
+                <div class="para-overlay">
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="food.jpg">
+                <div class="img-overlay">
+                    <a href="https://kaleshreyas45.github.io/Cooking/" class="btn btn-primary"
+                        style="border-top-left-radius: 20px;" target="_blank">View</a>
+                </div>
+                <h5 class="text-center">Food Website</h5>
+                <p class="text-center">This is my first simple but responsive one page website that I have created
+                    using pure HTML and CSS only. I have used media query to make it responsive. </p>
+                <div class="para-overlay">
+
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="box">
+                <img src="calculator.png">
+                <div class="img-overlay">
+                    <a href="https://kaleshreyas45.github.io/Calculator/" class="btn btn-primary"
+                        style="border-top-left-radius: 20px;" target="_blank">View</a>
+                </div>
+                <h5 class="text-center">Javascript Calculator</h5>
+                <p class="text-center">This is a calculator that I have made it using Javascript and css for designing.
+                    It contains addition,substraction,multiplication and division operations.</p>
+                <div class="para-overlay">
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="landingpage.jpg">
+                <div class="img-overlay">
+                    <a href="https://kaleshreyas45.github.io/Landing_Page/" class="btn btn-primary"
+                        style="border-top-left-radius: 20px;" target="_blank">View</a>
+                </div>
+                <h5 class="text-center">Landing Page</h5>
+                <p class="text-center">This is an amazing landing page that I have created using bootstrap and css.
+                    I have used dummy content for that site. The layout of website will change according to your
+                    device.  </p>
+                <div class="para-overlay">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>
+                        Quick Links
+
+                        <div class="underline"></div>
+                    </h4>
+                    <a href="https://createnotes.000webhostapp.com/CreateNotes.php" style="">Notes Taking
+                        Website</a><br>
+                    <a href="https://kaleshreya45.github.io/Gym/" style="" target="_blank">Gym</a><br>
+                    <a href="https://kaleshreya45.github.io/Cooking/" style="" target="_blank">Cooking</a><br>
+                    <a href="https://kaleshreya45.github.io/Cooking/" style="" target="_blank">Calculator</a><br>
+                    <a href="https://kaleshreya45.github.io/Cooking/" style="" target="_blank">Landing Page</a><br>
+
+                </div>
+                <div class="col-md-4">
+                    <h4>
+                        Address
+
+                        <div class="underline"></div>
+                    </h4>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>
+                            Rama Raman Mangalkaryalaya,LIC Colony,Shivajinagar,Pune.
+                        </p>
+                    </div>
+
+
+
+                </div>
+                <div class="col-md-4">
+                    <h4>
+                        Contact Me
+
+                        <div class="underline"></div>
+                    </h4>
+                    <div class="info">
+                        <div class="contact">
+                            <i class="fas fa-phone"></i>
+                            <p>
+                                9665746087
+                            </p>
+                        </div>
+                        <div class="mail">
+                            <i class="fas fa-envelope"></i>
+                            <p>
+                                <a href="mailto:kaleshreyas45@gmail.com">kaleshreyas45@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                   
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let hire = document.getElementById('hire');
+        hire.addEventListener('click', function () {
+            alert('Are you Ready to Work ? ')
+        })
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
