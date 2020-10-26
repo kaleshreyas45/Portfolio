@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a73d299641.js" crossorigin="anonymous"></script>
     <style>
         .banner::before {
@@ -57,7 +57,7 @@
     margin-top: 97px;
     font-size: 41px;
     font-weight: bolder;
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-shadow: black 4px 5px;
 
 }
@@ -72,7 +72,7 @@
 } */
 
 .c2 h1 {
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     font-size: 48px;
     color: black;
@@ -94,7 +94,7 @@
 
 .progress-bar {
     font-size: 20px;
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #0069d9;
 }
 
@@ -110,7 +110,8 @@
     color: white;
 }
 .check{
-    font-size: 40px;
+    font-size: 35px;
+    margin-top:-2px;
 }
 
 .business {
@@ -123,6 +124,10 @@ svg {
     color: white;
     margin-left:30px;
     
+}
+i{
+    margin-top:-5px;
+    color: white;
 }
 
 svg:hover {
@@ -173,7 +178,7 @@ svg:hover {
 }
 
 .x:hover .btn-overlay {
-    width: 160px;
+    width: 163px;
 }
 
 
@@ -195,10 +200,11 @@ svg:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .project .box {
-  position: relative;
+    position: relative;
     width: 300px;
     height: 450px;
     background-color: white;
@@ -257,7 +263,7 @@ svg:hover {
 .box p{
     position: relative;
     z-index: 2;
-     padding-top: 20px;
+    padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom:20px ;
@@ -274,54 +280,12 @@ svg:hover {
 .footer{
     width:100%;
     background-color: black;
+    padding: 10px;  
 }
-.footer h4{
-    color:white;
-    padding:20px;
+.footer p{
+    color: grey;
 }
-.footer .underline{
-    height:3px;
-    width:100px;
-    background-color: orangered;
-    position: absolute;
-}
-.footer a{
-    text-decoration: none;
-    color: white;
-    padding-left: 20px;
-}
-.footer .address{
-    display: flex;
-}
-.footer .address p{
-   color: white;
-   margin-left:10px;
-   margin-top:-10px;
-}
-i{
-    color:white;
-}
-.footer.info{
-    display: flex;
-    flex-direction: column;
-}
-.footer .contact{
-    display: flex;
-}
-.footer .mail{
-    display: flex;
-}
-.footer .contact p{
-    color: white;
-    margin-left:10px;
-    margin-top:-10px;
- }
-.footer .mail p{
-    color: white;
-   padding-left: 0px;
-    margin-top:-10px;
-    margin-left:-5px;
- }
+
  @media(max-width:974px) {
     .project .box {
         width: 250px;
@@ -399,16 +363,75 @@ i{
     height:180px;
 }
 }
-        body{
-        font-family: 'Poppins', sans-serif;
-        }
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.topbar{
+    background-color:#0069d9;
+    width:100%;
+    padding-top:8px;
+}
+.topbar i{
+    margin-top: 4px;
+}
+.topinfo{
+    display:flex;
+}
+.mail{
+    display: flex;
+}
+.mail p a{
+    color: white;
+    text-decoration: none;
+    margin-left:10px;
+}
+.phone{
+    display: flex;
+    margin-left:15px;
+}
+.phone p {
+    color: white;
+    text-decoration: none;
+    margin-left:10px;
+}
+@media(max-width:428px){
+    .topinfo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .phone{
+        margin-left: 0px;
+    }
+}
+
+
 
     </style>
 
 </head>
 
 <body>
-
+     <div class="container-fluid topbar">
+         <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="topinfo">
+                        <div class="mail">
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:kaleshreyas45@gmail.com">kaleshreyas45@gmail.com</a></p>
+                        </div>
+                        <div class="phone">
+                            <i class="fas fa-phone"></i>
+                            <p>9665746087</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+         </div>
+        
+     </div>
     <div class="container-fluid banner">
 
     </div>
@@ -456,9 +479,13 @@ i{
                     <center>
                         <p>As you can see my full name is Shreyas Nandkumar Kale. Basically my full interest is towards
                             the
-                            WEB DEVELOPMENT and I have made some responsive Landing Pages.
-                            I have learned basic PHP and MYSQL and created a notes taking website by using basic PHP and MYSQL.
-                        Recently I have done two freelancing projects related to web development.Now I am doing internship to use my knowledge and to gain experience of Real Work in this field.  
+                            WEB DEVELOPMENT and have made some of responsive Landing Pages.Now I am learning a server
+                            side
+                            language that is PHP and have cleared some of its basic parts.Recently I have done a Real
+                            Word
+                            Project that is e-commerce website using PHP and MySQL. Also I have created a notes taking
+                            website in PHP/MYSQL I have also completed 4 star in Python Programming Language in
+                            HackerRank.
                         </p>
                     </center>
 
@@ -594,7 +621,7 @@ i{
 
         </div>
     </div> -->
-   <div class="container-fluid pr-section">
+    <div class="container-fluid pr-section">
         <h1 class='text-center diff'>My Projects</h1>
         <div class="project">
            
@@ -680,70 +707,22 @@ i{
 
         </div>
     </div>
+    <div class="container-fluid map">
+        <h1 class="text-center" style="font-size: 48px; font-weight: bolder; margin-top: 20px;">Find me on Google Map</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.923352795063!2d73.84628051479848!3d18.532365487402124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c086d878ab15%3A0xef781c778f71efad!2sRama%20Raman%20Mangal%20Karyalaya!5e0!3m2!1sen!2sin!4v1603706761919!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0; margin-top: 20px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
     <div class="container-fluid footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>
-                        Quick Links
-
-                        <div class="underline"></div>
-                    </h4>
-                    <a href="https://createnotes.000webhostapp.com/CreateNotes.php" style="">Notes Taking
-                        Website</a><br>
-                    <a href="https://kaleshreyas45.github.io/Gym/" style="" target="_blank">Gym</a><br>
-                    <a href="https://kaleshreyas45.github.io/Cooking/" style="" target="_blank">Cooking</a><br>
-                    <a href="https://kaleshreyas45.github.io/Cooking/" style="" target="_blank">Calculator</a><br>
-                    <a href="https://kaleshreyas45.github.io/Cooking/" style="" target="_blank">Landing Page</a><br>
-
-                </div>
-                <div class="col-md-4">
-                    <h4>
-                        Address
-
-                        <div class="underline"></div>
-                    </h4>
-                    <div class="address">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>
-                            Rama Raman Mangalkaryalaya,LIC Colony,Shivajinagar,Pune.
-                        </p>
-                    </div>
-
-
-
-                </div>
-                <div class="col-md-4">
-                    <h4>
-                        Contact Me
-
-                        <div class="underline"></div>
-                    </h4>
-                    <div class="info">
-                        <div class="contact">
-                            <i class="fas fa-phone"></i>
-                            <p>
-                                9665746087
-                            </p>
-                        </div>
-                        <div class="mail">
-                            <i class="fas fa-envelope"></i>
-                            <p>
-                                <a href="mailto:kaleshreyas45@gmail.com">kaleshreyas45@gmail.com</a>
-                            </p>
-                        </div>
-                    </div>
-                   
-
-
-
-                </div>
-            </div>
-
-        </div>
+        <center>
+            <p>Copyright@2020 - Shreyas Kale(Web Developer)</p>
+        </center>
     </div>
 
-  
+    <script>
+        let hire = document.getElementById('hire');
+        hire.addEventListener('click', function () {
+            alert('Are you Ready to Work ? ')
+        })
+    </script>
 
 
 
